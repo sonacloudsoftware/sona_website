@@ -15,6 +15,14 @@ type PropsType = {
 );
 
 export default function VideoModal({ isOpen, onClose, ...props }: PropsType) {
+  // Bloqueia o scroll do body enquanto o modal está aberto
+  if (typeof window !== "undefined") {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }
   if (!isOpen) return null;
 
   let src = "";
@@ -26,7 +34,12 @@ export default function VideoModal({ isOpen, onClose, ...props }: PropsType) {
   }
 
   return createPortal(
-    <div className="fixed inset-0 flex items-center justify-center bg-black/60">
+    <div
+      className="fixed inset-0 flex items-center justify-center bg-black/80"
+      tabIndex={-1}
+      aria-modal="true"
+      role="dialog"
+    >
       <div className="relative w-full max-w-4xl bg-gray-900">
         <button
           onClick={onClose}
