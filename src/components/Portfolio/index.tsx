@@ -15,7 +15,7 @@ const Portfolio = () => {
       >
         <div className="container">
           <div className="flex justify-center">
-            <p className="text-center">Carregando portfólio...</p>
+            <p className="text-center">Carregando os portfólios...</p>
           </div>
         </div>
       </section>
