@@ -15,7 +15,13 @@ const menuData: Menu[] = [
   },
   {
     id: 33,
-    title: "Protifólio",
+    title: "Portfólio",
+    path: "/portfolio",
+    newTab: false,
+  },
+  {
+    id: 4,
+    title: "Blog",
     path: "/blog",
     newTab: false,
   },
@@ -23,6 +29,12 @@ const menuData: Menu[] = [
     id: 3,
     title: "Fale Conosco",
     path: "/contact",
+    newTab: false,
+  },
+  {
+    id: 5,
+    title: "Admin",
+    path: "/admin",
     newTab: false,
   },
 ];
