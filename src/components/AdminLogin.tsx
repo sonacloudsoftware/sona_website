@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 interface LoginProps {
   onLogin: () => void;
@@ -60,12 +61,12 @@ export default function AdminLogin({ onLogin }: LoginProps) {
             Faça login para acessar o painel administrativo
           </p>
           <div className="mt-4">
-            <a
+            <Link
               href="/"
               className="text-primary hover:text-primary/80 text-sm underline"
             >
               ← Voltar ao site
-            </a>
+            </Link>
           </div>
         </div>
 

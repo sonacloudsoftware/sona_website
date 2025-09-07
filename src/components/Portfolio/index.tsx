@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 import { usePortfolio } from "@/hooks/usePortfolio";
 
@@ -57,10 +58,12 @@ const Portfolio = () => {
               className="group shadow-one hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark relative overflow-hidden rounded-xs bg-white duration-300"
             >
               <div className="relative block aspect-[37/22] w-full">
-                <img
+                <Image
                   src={item.image}
                   alt={item.title}
-                  className="h-full w-full rounded-xs object-cover"
+                  fill
+                  className="rounded-xs object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 {item.featured && (
                   <div className="bg-primary absolute top-4 right-4 rounded-full px-3 py-1 text-xs text-white">
