@@ -10,10 +10,10 @@ const Contact = () => {
             data-wow-delay=".15s"
           >
             <h2 className="mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl dark:text-white">
-              Need Help? Open a Ticket
+              Gostou da nossa proposta? Entre em contato!
             </h2>
             <p className="text-body-color mb-12 text-base font-medium">
-              Our support team will get back to you ASAP via email.
+              Nossa equipe de suporte entrará em contato com você o mais rápido possível por e-mail.
             </p>
             <form>
               <div className="-mx-4 flex flex-wrap">
@@ -23,11 +23,11 @@ const Contact = () => {
                       htmlFor="name"
                       className="text-dark mb-3 block text-sm font-medium dark:text-white"
                     >
-                      Your Name
+                      Seu Nome
                     </label>
                     <input
                       type="text"
-                      placeholder="Enter your name"
+                      placeholder="Digite seu nome"
                       className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
                     />
                   </div>
@@ -38,11 +38,11 @@ const Contact = () => {
                       htmlFor="email"
                       className="text-dark mb-3 block text-sm font-medium dark:text-white"
                     >
-                      Your Email
+                      Seu Email
                     </label>
                     <input
                       type="email"
-                      placeholder="Enter your email"
+                      placeholder="Digite seu email"
                       className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
                     />
                   </div>
@@ -53,19 +53,19 @@ const Contact = () => {
                       htmlFor="message"
                       className="text-dark mb-3 block text-sm font-medium dark:text-white"
                     >
-                      Your Message
+                      Sua Mensagem
                     </label>
                     <textarea
                       name="message"
                       rows={5}
-                      placeholder="Enter your Message"
+                      placeholder="Digite sua Mensagem"
                       className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full resize-none rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
                     ></textarea>
                   </div>
                 </div>
                 <div className="w-full px-4">
                   <button className="bg-primary shadow-submit hover:bg-primary/90 dark:shadow-submit-dark rounded-xs px-9 py-4 text-base font-medium text-white duration-300">
-                    Submit Ticket
+                    Enviar Mensagem
                   </button>
                 </div>
               </div>
