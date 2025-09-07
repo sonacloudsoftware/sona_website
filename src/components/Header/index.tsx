@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
+import AdminButton from "./AdminButton";
 import menuData from "./menuData";
 
 const Header = () => {
@@ -159,7 +160,8 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <div>
+                <div className="flex items-center space-x-3">
+                  <AdminButton />
                   <ThemeToggler />
                 </div>
               </div>
